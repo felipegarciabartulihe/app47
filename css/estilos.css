@@ -15,14 +15,25 @@
   display: inline-block;
   width: 190px;
   border-box: border-box;
+  display: flex;
+  flex-grow: 1;
+  text-align: left;
+  flex-basis: 190px;
 }
 
+.mural {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
 .container{
   padding: 0 10%;
 }
 
-.contexto{
-  width: 90%;
-}
 
-.elemento {width: 50%;}
+@media (min-width: 560px){
+  .cartao{
+    width: 190px;
+    display: inline-block;
+  }
+}
