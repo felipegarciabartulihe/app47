@@ -1,0 +1,28 @@
+*
+{
+  margin:0;
+  padding: 0;
+}
+
+.cabecalho{
+  background: #0082c7;
+}
+
+.cartao{
+  background: #EBEF40;
+  margin: 16px;
+  padding: 16px;
+  display: inline-block;
+  width: 190px;
+  border-box: border-box;
+}
+
+.container{
+  padding: 0 10%;
+}
+
+.contexto{
+  width: 90%;
+}
+
+.elemento {width: 50%;}
