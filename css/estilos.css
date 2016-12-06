@@ -31,8 +31,6 @@
 }
 
 .mural--linhas .cartao{
-  -webkit-flex: auto;
-  -ms-flex: auto;
   flex: auto;
   width: auto;
   display: block;
