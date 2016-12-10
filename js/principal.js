@@ -45,3 +45,31 @@ $novoCartao.addEventListener('submit', function(){
     this.insertBefore($msgError, document.querySelector('.novoCartao-salvar'));
   }
 });
+
+
+function decideTipoCartao(palavra){
+  let quebras = palavra.split("<br>").length;
+  let totalDeLetras = palavra.replace(/<br>/g, ' ').length;
+  let ultimoMaior = "";
+
+  palavra.replace(/<br>/g, ' ').split(' ').forEach(function(){
+      if (palavra.length > ultimoMaior.length){
+        ultimoMaior = palavra;
+      }
+    }
+  );
+
+  let tamMaior = ultimoMaior.length;
+
+
+  let tipoCartao = "cartao--textoPequeno";
+
+  if(tamMaior < 9 && quebras < 5 && totalDeLetras < 55){
+    tipoCartao = "cartao--textoGrande";
+  }else if (tamMaior < 12 && quebras < 6 && totalDeLetras < 75){
+    tipoCartao = "cartao--textoMedio";
+  }
+
+console.log(tipoCartao);
+  return tipoCartao;
+}
