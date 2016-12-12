@@ -53,6 +53,9 @@ $('.novoCartao').submit(function(event){
                .append(conteudoTag)
                .prependTo('.mural');
 
+      
+      $("#busca").trigger('input');
+
 
   }
 
