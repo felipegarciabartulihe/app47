@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/novoCartao.css">
   <link rel="stylesheet" href="css/opcoesDoCartao.css">
   <link rel="stylesheet" href="css/cartao.css">
+  <link rel="stylesheet" href="css/botaoSync.css">
 
   <title>Ceep</title>
 </head>
@@ -20,6 +21,10 @@
     <div class="opcoesDaPagina">
       <input type="search" id="busca" placeholder="Busca" class="opcoesDaPagina-opcao" />
       <button id="mudaLayout" class="opcoesDaPagina-opcao opcoesDaPagina-botao">Linhas</button>
+      <button id="sync" class="opcoesDaPagina-opcao opcaoesDaPagina-botao botaoSync">
+        SVG
+      </button>
+      <button id="ajuda" class="opcoesDaPagina-opcao opcoesDaPagina-botao">?</button>
     </div>
   </header>
 
@@ -41,33 +46,25 @@
         (div#cartao_$.cartao>(div.opcoesDoCartao>button.opcoesDoCartao-remove.opcoesDoCartao-opcao[data-ref='$']{Remover})+p.cartao-conteudo>lorem)*5
     -->
 
-    <div id="cartao_1" class="cartao">
-      <div class="opcoesDoCartao"><button class="opcoesDoCartao-remove opcoesDoCartao-opcao" data-ref="1">Remover</button></div>
-      <p class="cartao-conteudo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo vitae quas repellendus iusto excepturi aliquam fugit est sequi, ea consectetur similique eveniet blanditiis accusantium sapiente pariatur nihil, ex! Magnam, ipsa!</p>
-    </div>
-    <div id="cartao_2" class="cartao">
-      <div class="opcoesDoCartao"><button class="opcoesDoCartao-remove opcoesDoCartao-opcao" data-ref="2">Remover</button></div>
-      <p class="cartao-conteudo">Quo suscipit ex, voluptas quas a, fuga excepturi nihil enim odit commodi, esse aut vel ad veniam soluta. Qui placeat odit tenetur dolor, perferendis repellat animi, consequatur veritatis voluptatibus officiis.</p>
-    </div>
-    <div id="cartao_3" class="cartao">
-      <div class="opcoesDoCartao"><button class="opcoesDoCartao-remove opcoesDoCartao-opcao" data-ref="3">Remover</button></div>
-      <p class="cartao-conteudo">Repudiandae laborum rem corrupti cum, fugiat adipisci porro soluta earum nihil eligendi at quas perferendis obcaecati, exercitationem reiciendis aut ipsam ratione! Error dignissimos inventore, quo pariatur voluptate totam. Mollitia, amet.</p>
-    </div>
-    <div id="cartao_4" class="cartao">
-      <div class="opcoesDoCartao"><button class="opcoesDoCartao-remove opcoesDoCartao-opcao" data-ref="4">Remover</button></div>
-      <p class="cartao-conteudo">Explicabo vitae sed tempore, expedita dignissimos incidunt atque nihil qui earum deserunt quisquam provident suscipit asperiores corporis, iusto deleniti culpa architecto distinctio in? Aut architecto, illum voluptas voluptatem velit deleniti.</p>
-    </div>
-    <div id="cartao_5" class="cartao">
-      <div class="opcoesDoCartao"><button class="opcoesDoCartao-remove opcoesDoCartao-opcao" data-ref="5">Remover</button></div>
-      <p class="cartao-conteudo">Quas odit natus expedita optio nobis laudantium molestiae sed rem explicabo corporis laborum magnam nostrum inventore aperiam obcaecati, impedit quasi deleniti! Quis dicta et, consequatur voluptatibus ad expedita, maiores minus.</p>
-    </div>
-
   </section>
 
   <script type="text/javascript" src="js/jquery.js" ></script>
+  
+
+
+  <script type="text/javascript" src="js/mudaLayout.js" ></script>
+  <script type="text/javascript" src="js/busca.js" ></script>
+  <script type="text/javascript" src="js/novoCartao.js" ></script>
+  <script type="text/javascript" src="js/ajuda.js" ></script>
+  <script type="text/javascript" src="js/sincronizacao.js" ></script>
+  <script type="text/javascript" src="js/adicionaCartao.js" ></script>
+  
+  
+  
+  <!--
   <script type="text/javascript" src="js/principal.js" ></script>
   <script type="text/javascript" src="js/scriptjquery.js" ></script>
-
+  -->
 
 </body>
 </html>
